@@ -1,0 +1,36 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: order-service   # 原课件为 user-order，此处统一修正
+  redis:
+    host: 192.168.100.128
+    password: 123456
+    port: 8000
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.100.128:3306/shop-order?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 1234
+  rabbitmq:
+    host: 192.168.100.128      # RabbitMQ服务器IP
+    port: 5672                  # AMQP端口
+    virtual-host: /             # 虚拟主机（默认是 /）
+    username: admin
+    password: admin
+    listener:
+      simple:
+        acknowledge-mode: manual  # 手动ACK模式，确保消息不丢失
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.100.128:8848
+
+mqconfig:
+  order_close_delay_queue: order.close.delay.queue
+  order_close_queue: order.close.queue
+  order_event_exchange: order.event.exchange
+  order_close_delay_routing_key: order.close.delay.routing.key
+  order_close_routing_key: order.close.routing.key
+  ttl: 170000  # 测试环境15秒，生产改为1800000（30分钟）
