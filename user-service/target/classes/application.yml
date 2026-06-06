@@ -1,0 +1,66 @@
+server:
+  port: 9001                          # 服务端口，确保与其它微服务不冲突
+
+spring:
+  application:
+    name: user-service        # 服务名称，注册到Nacos时的标识，需保持唯一
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.100.128:3306/shop-user?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 1234
+
+  redis:
+    host: 192.168.100.128
+    password: 123456
+    port: 8000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.100.128:8848
+
+  feign:
+    client:
+      config:
+        default:
+          connectTimeout: 5000    # 连接超时时间 5秒
+          readTimeout: 10000      # 读取超时时间 10秒
+
+  mail:
+    host: smtp.163.com
+    username: 15134528793@163.com
+    password: YTPYbDGuEdabLQh5          # 授权码而非登录密码
+    from: 15134528793@163.com
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB        # 单个文件最大10MB
+      max-request-size: 20MB     # 整个请求最大20MB（含多个文件）
+
+# MyBatis-Plus配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 控制台打印SQL日志
+
+logging:
+  level:
+    root: INFO                        # 全局日志级别
+
+
+minio:
+  endpoint: http://192.168.100.128:9000    # MinIO服务地址
+  accesskey: admin               # 用户名
+  secretkwy: password123               # 密码
+
+
+   # 将事务分组映射到TC集群
