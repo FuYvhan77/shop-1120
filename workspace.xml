@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1d889e5-beed-4cef-b8d3-14c816a7e184" name="Changes" comment="完成项目登录功能">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/ClientType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/CouponCategoryEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/CouponPublishEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/CouponStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/CouponTaskStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/ProductOrderPayTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/ProductOrderStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/ProductOrderTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/enums/ProductTaskStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/model/CouponRecordMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/model/ProductMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/request/AddressAddRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/request/CartItemRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/request/ConfirmOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/request/LockCouponRecordRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/request/LockProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/request/NewUserCouponRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/request/OrderItemRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/request/RepayOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/AddressVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/BannerVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/CartItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/CartVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/CouponRecordVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/CouponVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/OrderItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/PayInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/ProductOrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/ProductVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/test/java/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/test/java/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/CouponServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/config/CustomRedisCacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/config/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/config/MybatisPlusPageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/controller/CouponTaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/feign/ProductOrderFeignSerivce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/listener/CouponMQListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/mapper/CouponTaskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/model/CouponTaskDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/service/CouponTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/service/impl/CouponTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/resources/mapper/CouponMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/resources/mapper/CouponRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-service/src/main/resources/mapper/CouponTaskMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/hxy/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/OrderServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/config/AlipayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/config/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/config/MybatisPlusPageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/feign/CouponFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/feign/ProductFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/feign/UserFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/listener/ProductOrderMQListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/model/OrderMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/pay/AibabaPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/pay/PayFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/pay/PayInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/pay/WeixinPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/mapper/ProductOrderItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/mapper/ProductOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/ProductServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/config/InitIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/config/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/config/MybatisPlusPageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/config/ProductSyncScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/controller/ProductTaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/feign/ProductOrderFeignSerivce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/listener/ProductStockMQListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/mapper/ProductTaskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/model/ProductDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/model/ProductTaskDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/service/ProductTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/service/impl/ProductTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/BannerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ProductTaskMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/DirTreePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/EmptyFileChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/FolderLevelScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/SmallWordChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/SmartAbnormalChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/feign/CouponFeignService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/hxy/utils/BizCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/utils/BizCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/hxy/utils/JsonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/hxy/utils/JsonData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/java/MyBatisPlusGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/MyBatisPlusGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-service/src/main/java/com/hxy/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/hxy/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/hxy/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/hxy/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/impl/NotifyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/impl/NotifyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hxy/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="user_dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3DeF8vWTmOsjXH8mSFaRzDotQIE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Demo.executor": "Run",
+    "Application.DirTreePrinter.executor": "Run",
+    "Application.EmptyFileChecker.executor": "Run",
+    "Application.FolderLevelScanner.executor": "Run",
+    "Application.MyBatisPlusGenerator.executor": "Run",
+    "Application.SmallWordChecker.executor": "Run",
+    "Application.SmartAbnormalChecker.executor": "Run",
+    "HTTP Request.generated-requests | #11.executor": "Run",
+    "Maven.common [install].executor": "Run",
+    "Maven.coupon-service [clean].executor": "Run",
+    "Maven.shop_1024 [clean].executor": "Run",
+    "Maven.shop_1024 [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.CouponServiceApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "git-widget-placeholder": "user__dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/zhangyadong/Desktop/code/shop_1024/gateway/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/zhangyadong/Desktop/code/shop_1024/gateway/src/main/java/com/hxy/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5574713",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\gateway\src\main\resources" />
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\common\src\main\java\com\hxy\vo" />
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy" />
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\common\src\main\java\com\hxy\config" />
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\coupon-service\src\main\java\com\hxy\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\resources\mapper" />
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\mapper" />
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\model" />
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\service\impl" />
+      <recent name="C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hxy.config" />
+      <recent name="com.hxy.feign" />
+      <recent name="com.hxy.model" />
+      <recent name="com.hxy.enums" />
+      <recent name="com.hxy" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="CouponServiceApplication" value="STOPPED" />
+              <entry key="GatewayApplication" value="STOPPED" />
+              <entry key="OrderServiceApplication" value="STOPPED" />
+              <entry key="ProductServiceApplication" value="STOPPED" />
+              <entry key="UserServiceApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Demo" />
+      <module name="common" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyBatisPlusGenerator" />
+      <module name="common" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmartAbnormalChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SmartAbnormalChecker" />
+      <module name="product-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CouponServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="coupon-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxy.CouponServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxy.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxy.OrderServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="product-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxy.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxy.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.OrderServiceApplication" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.MyBatisPlusGenerator" />
+        <item itemvalue="Application.SmartAbnormalChecker" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1d889e5-beed-4cef-b8d3-14c816a7e184" name="Changes" comment="" />
+      <created>1778634477776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778634477776</updated>
+      <workItem from="1778634479252" duration="5343000" />
+      <workItem from="1778639845680" duration="11793000" />
+      <workItem from="1778717665521" duration="13413000" />
+      <workItem from="1778802996263" duration="11846000" />
+      <workItem from="1779151042228" duration="12614000" />
+      <workItem from="1779235772618" duration="9783000" />
+      <workItem from="1779278822703" duration="125000" />
+      <workItem from="1779283596856" duration="130000" />
+      <workItem from="1779324018465" duration="8216000" />
+      <workItem from="1779350899157" duration="1115000" />
+      <workItem from="1779352847206" duration="75000" />
+      <workItem from="1779410066795" duration="10979000" />
+      <workItem from="1779753720900" duration="12910000" />
+      <workItem from="1779840398686" duration="13439000" />
+      <workItem from="1779927459074" duration="9904000" />
+      <workItem from="1780013418123" duration="14487000" />
+      <workItem from="1780039075737" duration="541000" />
+      <workItem from="1780359849377" duration="11727000" />
+    </task>
+    <task id="LOCAL-00001" summary="初始化项目">
+      <option name="closed" value="true" />
+      <created>1778636641967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778636641967</updated>
+    </task>
+    <task id="LOCAL-00002" summary="完成项目搭建">
+      <option name="closed" value="true" />
+      <created>1778653774509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1778653774510</updated>
+    </task>
+    <task id="LOCAL-00003" summary="完成项目登录功能">
+      <option name="closed" value="true" />
+      <created>1778823249920</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778823249920</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化项目" />
+    <MESSAGE value="完成项目搭建" />
+    <MESSAGE value="完成项目登录功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成项目登录功能" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hxy/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/hxy/service/ProductOrderService.java</url>
+          <line>30</line>
+          <properties class="com.hxy.service.ProductOrderService" method="page1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

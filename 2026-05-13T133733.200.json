@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "defaultStatus": 0,
+    "receiveName": "诸葛亮",
+    "phone": "12312312312",
+    "province": "蜀国",
+    "city": "太原",
+    "region": "咸阳里",
+    "detailAddress": "58号",
+    "createTime": "2026-05-12T02:45:48.000+00:00"
+  }
+]
