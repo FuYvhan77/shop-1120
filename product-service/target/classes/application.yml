@@ -1,0 +1,40 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: product-service          # 注意：课件中误写为user-coupon，应改为product-service
+  redis:
+    host: 192.168.100.128
+    password: 123456
+    port: 8000
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.100.128:3306/shop-product?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 1234
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.100.128:8848
+
+  rabbitmq:
+    host: 192.168.100.128      # RabbitMQ服务器IP
+    port: 5672                  # AMQP端口
+    virtual-host: /             # 虚拟主机（默认是 /）
+    username: admin
+    password: admin
+    listener:
+      simple:
+        acknowledge-mode: manual  # 手动ACK模式，确保消息不丢失
+  elasticsearch:
+    rest:
+      uris: http://192.168.100.128:9200   # ES服务地址
+
+mqconfig:
+  stock_release_delay_queue: stock.release.delay.queue
+  stock_release_queue: stock.release.queue
+  stock_event_exchange: stock.event.exchange
+  stock_release_delay_routing_key: stock.release.delay.routing.key
+  stock_release_routing_key: stock.release.routing.key
+  ttl: 180000   # 测试15秒，生产应设为订单超时+缓冲时间，如32分钟

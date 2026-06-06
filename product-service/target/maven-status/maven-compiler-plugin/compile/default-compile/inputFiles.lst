@@ -1,0 +1,17 @@
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\config\InterceptorConfig.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\config\MybatisPlusPageConfig.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\config\RedisConfig.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\controller\BannerController.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\controller\CartController.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\controller\ProductController.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\mapper\BannerMapper.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\mapper\ProductMapper.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\model\BannerDO.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\model\ProductDO.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\ProductServiceApplication.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\service\BannerService.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\service\CartService.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\service\impl\BannerServiceImpl.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\service\impl\CartServiceImpl.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\service\impl\ProductServiceImpl.java
+C:\Users\zhangyadong\Desktop\code\shop_1024\product-service\src\main\java\com\hxy\service\ProductService.java
