@@ -1,0 +1,43 @@
+server:
+  port: 8889
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.100.128:8848
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://product-service      # lb:// 表示从Nacos获取服务列表并负载均衡
+          order: 1
+          predicates:
+            - Path=/product-server/**    # 匹配路径前缀
+          filters:
+            - StripPrefix=1              # 转发前去掉第一层路径
+        - id: user-service
+          uri: lb://user-service
+          order: 2
+          predicates:
+            - Path=/user-server/**
+          filters:
+            - StripPrefix=1
+        - id: coupon-service
+          uri: lb://coupon-service
+          order: 3
+          predicates:
+            - Path=/coupon-server/**
+          filters:
+            - StripPrefix=1
+        - id: order-service
+          uri: lb://order-service
+          order: 4
+          predicates:
+            - Path=/order-server/**
+          filters:
+            - StripPrefix=1
+      discovery:
+        locator:
+          enabled: true   # 开启通过服务名自动创建路由（配合lb://使用）
